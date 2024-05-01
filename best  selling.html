@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <title>best-selling</title>
+    
+</head>
+<body class="khaledbody">
+    
+    <header class="khaledheader">
+            <a href="/index.html" class="khaledlogo">booktobia</a>
+            <nav class="menuuu">
+                <a href="/index.html">home</a>
+                <a href="categories">Categories</a>
+                <a href="/contact us.html">Contact us</a>
+            </nav>
+            <div class="searchsamy">
+                <input  type="text" id="samyInput" onkeyup="myFunction()" placeholder="Search for Books..">
+            
+                <div class="listsamy">
+                  <ul id="samyUL">
+                    <li><a href="/wonder.html">Wonder
+                        <img src="images/wonder.png" alt="">
+                    </a></li>
+                    <li><a href="/Rich Dad.html">Rich Dad Poor Dad
+                        <img src="images/Rhic Dad.png" alt="">
+                    </a>
+                    </li>
+        
+                    <li><a href="/13 reasons why.html">13 Reason Why
+                        <img src="images/13 Reasons Why.png" alt="">
+                    </a></li>
+        
+                    <li><a href="/the fault in our stars.html">The Fault in our stars
+                      <img src="images/the fault in our stars book.jpg" alt="">
+                    </a></li>
+        
+                  </ul>
+                </div>
+                </div>
+            
+            
+                </div>
+    </header>
+
+
+
+   <div class="khaledcard">
+
+    <img class="thefirst" src="images/13_reason_why cover.png" ></img>
+    <h2 class="aa">13 reasons why</h2>
+    <p class="aaa"> jay asher 
+        <br>avg rating 3.65 — 80,569 ratings — published 2008
+        <br>Based on the best-selling book by Jay Asher, 13 Reasons Why follows teenager Clay Jensen as he returns home from school to find a mysterious box with his name on it lying on his porch. Inside he discovers cassette tapes recorded by Hannah Baker—his classmate and crush—who tragically committed suicide two weeks earlier.
+    </p>
+    <br>
+
+    <img class="thesecond" src="images/the perks of being a wallflower book-.jpg"></img>
+    <h2 class="bb">the perks of being a walflower</h2>
+    <p class="bba"> jay asher 
+        <br>avg rating 4.23 — 1,798,454 ratings — published  February 1, 1999
+        <br>Charlie, a 15-year-old introvert, enters high school and is nervous about his new life. When he befriends his seniors, he learns to cope with his friend's suicide and his tumultuous past.
+    </p>
+    <br> <br><br>
+
+    <img class="thethird" src="images/the fault in our stars book.jpg"></img>
+    <h2 class="cc">the fault in our stars</h2>
+    <p class="cca"> jay asher 
+        <br>avg rating 4.14 — 5,152,364 ratings — published January 10, 2012
+        <br>The Fault in Our Stars by John Green is a young adult fiction novel that narrates the story of a 16-year-old girl who is diagnosed with cancer. She joins a support group where she meets Augustus, and there is a rollercoaster of emotions throughout this novel as the relationship between Hazel and Augustus develops.
+    </p>
+   </div>
+   
+   <div class="khaledvideocard">
+        <video class="khaledvideo" controls>
+            <source src="video/khaledvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+   </div>
+
+   <footer class="khaledabout">
+        <h2>This Page Made By: khaled_samy</h2>
+        <a href="https://www.linkedin.com/in/khaled-samy-944608302/" target="_blank">
+        <img src="icons/linkedin.png" alt="" width="40">
+        </a>
+        <a href="https://github.com/khaledsamy20" target="_blank">
+        <img src="icons/github-sign.png" alt="" width="40" style="position: absolute;left: 110px;">
+        </a>
+   </footer>
+   <p class="downnnn"> </p>
+
+
+   <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('samyInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("samyUL");
+      li = ul.getElementsByTagName('li');
+      
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+          
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+  var searchInput = document.getElementById("samyInput");
+  var searchMenu = document.getElementById("samyUL");
+
+  searchInput.addEventListener("focus", function() {
+    showSearchMenu();
+  });
+
+  searchInput.addEventListener("blur", function() {
+    hideSearchMenu();
+  });
+
+  function showSearchMenu() {
+    searchMenu.style.display = "block";
+  }
+
+  function hideSearchMenu() {
+    setTimeout(function() {
+      searchMenu.style.display = "none";
+    }, 200);
+  }
+  }
+ );
+    </script>
+
+
+</body>
+
+</html>

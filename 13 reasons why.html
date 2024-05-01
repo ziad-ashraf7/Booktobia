@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\10  pro\IT project\Booktobia\style.css\style.css">
+    <title>Thirteen Reasons WHY</title>
+</head>
+<body class="thirteen_reason_why-body">
+    <header>
+        
+        <div class="back-to-back">
+            <div class="backup">
+                <h1 class="buy-it">B<span class="in-buy-it">u</span>y <span class="in-buy-it">N</span>o<span class="in-buy-it">w</span></h1>
+                <img class="cover-h_1" width="550" height="600" src="/images/13_reason_why cover.png" alt="">
+                <img class="cover-h_2" width="550" height="600" src="/images/13_reason_why_be.png">
+                
+                <img class="darkmode-icon" id="darkicon" src="/Icons/sleep-mode.png" alt="">
+
+               
+                <a class="amazon-egy" target="_blank" href="https://a.co/d/5VN84o9"><img src="icons/amazon.png" width="33px">Amazon</a>
+                <a class="audiobookstore" target="_blank" href="https://audiobookstore.com/audiobooks/thirteen-reasons-why-unabridged.aspx?campaign=dynamic_ads_international&source=google&medium=ppc&gad_source=5&gclid=EAIaIQobChMIgZfn_ezVhQMV02mRBR2ScQg7EAAYASAAEgKm7vD_BwE?utm_source=detail_page&utm_campaign=copy_share_link&utm_medium=website">Audio Book Store</a>
+                <a class="WHsmith" target="_blank" href="https://www.whsmith.co.uk/products/thirteen-reasons-why/jay-asher/paperback/9780141328294.html">WHsmith</a>
+                
+            </div>
+            
+        </div>
+
+        
+    </header>
+
+    <div class="searchziadd">
+        <input  type="text" id="ziaddInput" onkeyup="myFunction()" placeholder="Search for Books..">
+    
+        <div class="listziadd">
+          <ul id="ziaddUL">
+            <li><a href="/wonder.html">Wonder
+                <img src="images/wonder.png" alt="">
+            </a></li>
+            <li><a href="/Rich Dad.html">Rich Dad Poor Dad
+                <img src="images/Rhic Dad.png" alt="">
+            </a>
+            </li>
+
+            <li><a href="/13 reasons why.html">13 Reason Why
+                <img src="images/13 Reasons Why.png" alt="">
+            </a></li>
+
+            <li><a href="/the fault in our stars.html">The Fault in our stars
+              <img src="images/the fault in our stars book.jpg" alt="">
+            </a></li>
+
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="div-navi">
+    <div class="open-navi"></div>
+        
+        <div class="bar">
+
+            <table>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="">Categories</a></td>
+                    <td><a href="/best  selling.html">Best Selling</a></td>
+                    <td><a href="/contact us.html">Contact Us</a></td>
+              
+            </table>
+        </div>
+    </div>
+    
+    <iframe class="Review" width="560" height="315" src="https://www.youtube.com/embed/IjRPCRd3StA?si=RHx_pNqO5mhl6g_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1 class="review">BOOK <span class="Book-review">REVIEW</span></h1>
+    
+    
+    <div class="the-book">
+        <img class="book-img" src="/images/13_reason_why cover.png" alt="" >
+        <div class="book-container">
+            <div class="title-of-book">TH<span class="thebook-span">i</span>RTEEN R<span class="thebook-span">3</span>ASON WHY</div>
+            <p class="book-des">Thirteen Reasons Why is a young adult novel written by Jay Asher in 2007. The book tells the story of high school student Hannah Baker, who kills herself and leaves behind a box of 13 cassette tapes that detail the reasons for her suicide and call out the people she holds responsible. The novel is a first person narrative told from the perspective of Clay, a high school boy who receives 13 tapes that fellow student Hannah Baker leaves behind after her suicide. The book focuses on harassment and sexual assault.</p>
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById("darkicon");
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-mode");
+            if(document.body.classList.contains("dark-mode")){
+                icon.src = "Icons/light.png"
+            }else{
+                icon.src = "Icons/sleep-mode.png"
+            }
+        }
+
+
+    </script>
+
+  <footer class="thirteenreason-footer">
+    <h2 class="thirteen-footer">This Page Is Made By:_Eng. Zeyad Emad _ </h2>
+    <a href="https://www.linkedin.com/in/zeyad-emad-bab321303?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgdSbeXcGSrC7LqCVqmktaQ%3D%3D" target="_blank">
+        <img src="icons/linkedin.png" alt="" width="40">
+    </a>
+    <a href="https://github.com/zeyad1217" target="_blank" >
+        <img src="icons/github-sign.png" alt="" width="40" style="position: absolute;left: 110px;">
+    </a>
+
+  </footer>  
+
+
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('ziadInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("ziaddUL");
+      li = ul.getElementsByTagName('li');
+      
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+
+     }
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var searchInput = document.getElementById("ziaddInput");
+        var searchMenu = document.getElementById("ziaddUL");
+
+        searchInput.addEventListener("focus", function() {
+            showSearchMenu();
+        });
+
+        searchInput.addEventListener("blur", function() {
+            hideSearchMenu();
+        });
+
+        function showSearchMenu() {
+            searchMenu.style.display = "block";
+        }
+
+        function hideSearchMenu() {
+            
+            setTimeout(function() {
+            searchMenu.style.display = "none";
+            }, 200);
+        }
+ });
+    </script>
+    
+</body>
+</html>
